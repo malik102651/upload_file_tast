@@ -18,7 +18,9 @@ app.use(express.json())
 
 const corsOptions = {
     //origin: 'http://localhost:3000',
-    origin: 'https://upload-file-task.herokuapp.com',
+    credentials: true,
+    origin: "*",
+    //origin: 'https://upload-file-task.herokuapp.com',
     credentials: true,            //access-control-allow-credentials:true
     optionSuccessStatus: 200
 }
