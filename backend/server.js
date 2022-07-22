@@ -38,7 +38,8 @@ var Storage = multer.diskStorage({
 })
 
 var upload = multer({ storage: Storage }).array('file')
-app.post('/api/data/upload', (req, res) => {
+// /api/data/upload
+app.post('https://upload-file-task.herokuapp.com/', (req, res) => {
     //console.log(req.files)
     upload(req, res, err => {
         if (err) {
