@@ -133,7 +133,7 @@ function UploadFile() {
 
 
 
-        await axios.post("https://upload-file-task.herokuapp.com", formData, {
+        await axios.post("https://upload-file-task.herokuapp.com/api/data/upload", formData, {
             headers: {
                 "Content-Type": "multipart/form-data"
             },
