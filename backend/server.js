@@ -21,6 +21,7 @@ const corsOptions = {
     credentials: true,
     //origin: "*",
     origin: 'https://upload-file-task.herokuapp.com',
+    methods: ["POST","GET"],
     credentials: true,            //access-control-allow-credentials:true
     optionSuccessStatus: 200
 }
